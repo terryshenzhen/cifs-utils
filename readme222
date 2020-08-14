@@ -6,3 +6,6 @@ Ubuntu成功：sudo mount -t cifs //192.168.1.232/project /mnt/aa -o guest,vers=
 方法2：使用编译出来的mount.cifs也成功： sudo ./mount.cifs //192.168.1.232/project /mnt/aa -o guest,vers=1.0
 
 网上教程里面都是说明要写vers=2.0，可能与我的版本不同。不写vers=1.0或者写错都会出现host is down的错误。mount成功后，进入/mnt/aa可以看到共享的全部内容。
+
+hisi board need to add nfs format in the kernel
+
